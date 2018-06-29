@@ -1,0 +1,21 @@
+{
+    "name": "731my/php-meta-tags",
+    "description": "A PHP library to fetch meta tags from html content",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+            "name": "Helmy Al Dobhany",
+            "email": "i@731my.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Meta\\": ""
+        }
+    },
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    }
+}
