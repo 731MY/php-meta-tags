@@ -12,7 +12,7 @@ PHP library to extract meta tags from html contents
     composer require 731my/php-meta-tags
 
 ## Usage: 
-####Simple use
+#### Simple use
 ~~~php
 
 $Reader = new Reader('https://www.bbc.com/news/uk-england-44520759');
@@ -22,7 +22,7 @@ $Meta = new MetaFetcher($Reader);
 print_r($Meta->meta());
 ~~~
 
-####Filter specific tags
+#### Filter specific tags
 ~~~php
 $Reader = new Reader('https://www.bbc.com/news/uk-england-44520759');
 
@@ -31,21 +31,21 @@ $Meta = new MetaFetcher($Reader);
 print_r($Meta->meta(['og:image']));
 ~~~
 
-####Load from file
+#### Load from file
 ~~~php
 $Reader = new Reader('/tmp/file.html', Type::FILE);
 
 $Meta = new MetaFetcher($Reader);
 ~~~
 
-####Load from data
+#### Load from data
 ~~~php
 $Reader = new Reader("<html>....</html>", Type::DATA);
 
 $Meta = new MetaFetcher($Reader);
 ~~~
 
-####Config
+#### Config
 
 you can customize user-agent , timeout , referer 
 
